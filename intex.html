@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <main id="main">
+        <form>
+            <input type="text" autocomplete="off" id="value" placeholder="Enter city name"/>
+            <button type="submit">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div class="result">
+            <figure class="country">
+                <figcaption id="location">Country</figcaption>
+                <img src="https://flagsapi.com/DE/shiny/64.png" id="flag" alt="flag" />
+            </figure>
+
+            <div class="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" id="weatherImage" alt="weather icon" />
+                <div class="Tempcaption">
+                    <span id="temperatureValue">31</span>
+                    <sup>o</sup>C
+                </div>
+            </div>
+
+            <p id="desc">Overcast Clouds</p>
+
+            <div class="info">
+                <ul>
+                    <li>
+                        <span>Clouds</span>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span id="cloud">50</span>
+                    </li>
+                    <li>
+                        <span>Humidity</span>
+                        <i class="fa-solid fa-droplet"></i>
+                        <span id="humidity">50</span>
+                    </li>
+                    <li>
+                        <span>Pressure</span>
+                        <i class="fa-solid fa-gauge"></i>
+                        <span id="pressure">1013</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="program.js"></script>
+</body>
+</html>
